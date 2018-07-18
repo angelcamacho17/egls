@@ -125,5 +125,26 @@ class User implements UserInterface
     {
         return $this->password;
     }
+
+    /**
+    *@return (Role|string)[] The user roles
+    */
+    public function getRoles(){
+
+        return [
+            'ROLE_USER'
+        ];
+
+    }
+
+    /**
+    *@return string|null The salt
+    */
+    public function getSalt(){
+
+    }
+    public function eraseCredentianls(){
+
+    }
 }
 
