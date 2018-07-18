@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title >Symfony 3 Application</title>
+	<link rel="stylesheet" href="{{ absolute_url(asset('css/bootstrap.css')) }}"/>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    
+
+     <header><h1 >Symfony 3 App</h1>
+			</header>   
+
+  </div>
+</nav>
+<div class="container">
+{% for success_message in app.session.flashbag.get('message')%}
+    	<div class="alert alert-success">{{success_message}}</div>
+    {%endfor%}
+    </div>
+    <div class="container">
+{% for success_message in app.session.flashbag.get('message2')%}
+    	<div class="alert alert-success">{{success_message}}</div>
+    {%endfor%}
+    </div>

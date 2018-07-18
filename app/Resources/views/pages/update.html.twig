@@ -1,0 +1,11 @@
+{{include ('pages/inc/header.html.twig')}}
+<div class="container">
+<a href="{{absolute_url(asset(''))}}post" class="btn btn-primary ">Back</a>
+	<h3>UPDATE POSTS</h3>
+
+		{{form_start(form)}}
+		{{form_widget(form)}}
+		{{form_end(form)}}
+
+</div>
+{{include ('pages/inc/footer.html.twig')}}
