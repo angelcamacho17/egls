@@ -11,7 +11,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @ORM\Table(name="user")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\UserRepository")
  */
-class User implements UserInterface
+class User /*implements UserInterface*/
 {
     /**
      * @var int
@@ -140,11 +140,12 @@ class User implements UserInterface
     /**
     *@return string|null The salt
     */
-    public function getSalt(){
+    /*public function getSalt(){
+      return;
 
     }
     public function eraseCredentianls(){
+      return ;
 
-    }
+    }*/
 }
-
